@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControladorPrincipal">
+   <children>
+      <MenuBar layoutX="347.0" layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#salir" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cliente">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#crearReserva" text="Crear Reserva" />
+                  <MenuItem mnemonicParsing="false" onAction="#crearCliente" text="Crear Cliente" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Empleado">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#crearCliente" text="Crear Cliente" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarReservasSucursal" text="Listar Reservas Sucursal" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarVehiculos" text="Listar Vehiculos Disponibles" />
+                  <MenuItem mnemonicParsing="false" onAction="#entregarVehiculo" text="Entregar Vehiculo" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listarSucursales" text="Listar Sucursales" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

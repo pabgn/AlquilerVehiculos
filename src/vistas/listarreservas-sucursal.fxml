@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControladorListarReservasSucursal">
+   <children>
+      <TableView fx:id="reservasXsucursales" layoutX="127.0" layoutY="85.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="69.0" text="ID " />
+          <TableColumn fx:id="fechaRecogida" prefWidth="130.0" text="Fecha Recogida" />
+            <TableColumn fx:id="fechaDevolucion" prefWidth="130.0" text="Fecha Devolución" />
+            <TableColumn fx:id="modalidadAlquiler" prefWidth="150.0" text="Modalidad Alquiler" />
+            <TableColumn fx:id="categoria" prefWidth="130.0" text="Categoria" />
+            <TableColumn fx:id="clienteRealiza" prefWidth="130.0" text="Cliente Realiza" />
+            <TableColumn fx:id="nomCliente" prefWidth="130.0" text="Nombre Cliente" />
+            <TableColumn fx:id="sucursalRecogida" prefWidth="130.0" text="Sucursal Recogida" />
+            <TableColumn fx:id="sucursalDevolucion" prefWidth="130.0" text="Sucursal Devolución" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
